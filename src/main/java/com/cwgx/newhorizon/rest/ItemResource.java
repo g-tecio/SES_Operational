@@ -25,8 +25,8 @@ public class ItemResource {
     /*@PostMapping("/item/post")
     Item newCategory(@RequestBody Item newCategory){
         return itemRepository.save(newCategory);
-    }
-    */
+    }*/
+
 
     @PostMapping("/item/post")
     Item newItem(@RequestBody Item newItem){
@@ -37,4 +37,5 @@ public class ItemResource {
         //return eventRepository.save(newEvent);
         return itemRepository.findItemById(1);
     }
+
 }
